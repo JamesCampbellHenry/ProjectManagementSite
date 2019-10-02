@@ -1,0 +1,55 @@
+/*! 
+custom CSS styling which will override the bootstrap css
+just reference the elements like you usally would and style accordingly
+don't change too much though, check the bootstrap css design first for reference
+ */
+ 
+
+/* hide the scrolling over flows on the hom page slideshow */ 
+.homePageFix {
+
+    overflow-y: hidden;
+    overflow-x: hidden;
+    margin:0;
+    padding:0; 
+
+}
+
+/* pushes list group in events page down from fixed navbar*/
+ .list-group{
+
+   margin-top:100px;
+    
+    
+}
+
+/* pushes the slideshow indicators up*/
+.carousel-indicators{
+
+    margin-bottom: 4%;
+}
+
+.loginFormStyle {
+
+    margin-top:200px;
+
+}
+
+
+/* ingore this, was testing background images for homepage, might re-use later*/
+.test1 {
+
+    
+    /* background-image: url("img/homeimg1.jpg") no-repeat 0 0; */
+    /* background-size: cover;  */
+   
+
+}
+
+
+
+
+
+
+
+

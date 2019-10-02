@@ -1,0 +1,4 @@
+The only file you have to worry about in here really is the first css file (boostrap)
+I wouldnt change any of the code in here, just overwrite it in the customCSS file i made 
+
+- mark
