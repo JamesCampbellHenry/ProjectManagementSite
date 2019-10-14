@@ -9,8 +9,6 @@
 
 	// include functions to dump blocks of HTML
 	include 'flatText.php';
-	
-	include 'manage_staff.html';
 
 	// function places everything from <!DOCTYPE html> to </head>
 	getHeader('Manage Staff');
@@ -22,11 +20,10 @@
     <?PHP
   		// function places the nav bar on the page
   		getNavBar('manage_staff');
-		
-		
   	?>
-	
-	<div class="container-fluid">
+  
+
+<div class="container-fluid">
 	
 		<form class="staffInput" action="#" style="margin-top: 100px;" id="customFormSize">
 		
@@ -77,7 +74,7 @@
 			</div>
 			
 			<!-- button is styled in css to match the RGU purple theme -->
-			<button type="submit" class="btn btn-primary" id="staffInputBtn">Sign Up</button>
+			<button type="submit" class="btn btn-primary" id="staffInputBtn">Add Staff</button>
 			
 		</form>
 	
