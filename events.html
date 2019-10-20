@@ -43,8 +43,11 @@ CSS elements can be changed/overwritten by making own css file -->
                                            <a class="nav-link" href="index.html">Home </a>
                                          </li>
                                          <li class="nav-item active ">
-                                           <a class="nav-link" href="events.html">Events <span class="sr-only">(current)</span></a>
+                                           <a class="nav-link" href="events.html">Events</a>
                                          </li>
+                                         <li class="nav-item">
+                                          <a class="nav-link" href="blog.html">Blog</span></a>
+                                        </li>
              
                                          <!--Drop down items start here-->
                                          <li class="nav-item dropdown">
@@ -73,49 +76,59 @@ CSS elements can be changed/overwritten by making own css file -->
         
     </div>
 
-    <!-- This is a basic idea of what the events could be stored in, there's a lot of custom options for list groups 
-    Clicking on the list group items can actually href you to other pages, could link to a page with more info on the event or expand the item
-    link: https://getbootstrap.com/docs/4.3/components/list-group/ -->
-    <div class="container-fluid">
+   
+   <div class = "eventsHomeCustom">
 
-        <div class = "row">
+      <div class="container-fluid">
 
-            <div class = "col">
+          <div class = "row">
+  
+              <div class = "col">
+  
+                      <div class="list-group">
+                              <a href="#" class="list-group-item list-group-item-action" data-toggle="modal" data-target=".bd-example-modal-lg">
+                                <div class="d-flex w-100 justify-content-between">
+                                  <h5 class="mb-1">List group item heading</h5>
+                                  <small>3 days ago</small>
+                                </div>
+                                <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                                <small>Donec id elit non mi porta.</small>
+                              </a>
+                              <a href="#" class="list-group-item list-group-item-action">
+                                <div class="d-flex w-100 justify-content-between">
+                                  <h5 class="mb-1">List group item heading</h5>
+                                  <small class="text-muted">3 days ago</small>
+                                </div>
+                                <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                                <small class="text-muted">Donec id elit non mi porta.</small>
+                              </a>
+                              <a href="#" class="list-group-item list-group-item-action">
+                                <div class="d-flex w-100 justify-content-between">
+                                  <h5 class="mb-1">List group item heading</h5>
+                                  <small class="text-muted">3 days ago</small>
+                                </div>
+                                <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                                <small class="text-muted">Donec id elit non mi porta.</small>
+                              </a>
+                            </div>  
+  
+  
+              </div>
+  
+  
+              
+          </div>
+  
+      </div>
 
-                    <div class="list-group">
-                            <a href="#" class="list-group-item list-group-item-action">
-                              <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">List group item heading</h5>
-                                <small>3 days ago</small>
-                              </div>
-                              <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                              <small>Donec id elit non mi porta.</small>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                              <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">List group item heading</h5>
-                                <small class="text-muted">3 days ago</small>
-                              </div>
-                              <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                              <small class="text-muted">Donec id elit non mi porta.</small>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action">
-                              <div class="d-flex w-100 justify-content-between">
-                                <h5 class="mb-1">List group item heading</h5>
-                                <small class="text-muted">3 days ago</small>
-                              </div>
-                              <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
-                              <small class="text-muted">Donec id elit non mi porta.</small>
-                            </a>
-                          </div>  
+   </div>
 
-
-            </div>
-
-
-            
+   <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          ...
         </div>
-
+      </div>
     </div>
 
     

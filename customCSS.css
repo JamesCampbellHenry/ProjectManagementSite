@@ -15,13 +15,16 @@ don't change too much though, check the bootstrap css design first for reference
 
 }
 
-/* pushes list group in events page down from fixed navbar*/
- .list-group{
+.eventsHomeCustom{
 
-   margin-top:100px;
-    
-    
+    width: 100%;
+    height:auto;
+    margin-top: 5%;
+
+
 }
+
+
 
 /* pushes the slideshow indicators up*/
 .carousel-indicators{
@@ -36,23 +39,8 @@ don't change too much though, check the bootstrap css design first for reference
 }
 
 
-/* ingore this, was testing background images for homepage, might re-use later*/
-.test1 {
-
-    
-    /* background-image: url("img/homeimg1.jpg") no-repeat 0 0; */
-    /* background-size: cover;  */
-   
-
-}
 
 
-.staffInput{
-	
-	margin-left: 30%;
-	margin-right: 30%;
-	
-}
 
 /* overrides btn-primary on staff button to be rgu purple theme */
 #staffInputBtn{
@@ -61,12 +49,32 @@ don't change too much though, check the bootstrap css design first for reference
 	
 }
 
-#customFormSize{
-	
-	font-size: 18px;
-	margin-top: 100px;
-	
+
+
+.events-content {
+
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+    
+
 }
+
+.manageStaffSectionCustom{
+
+    margin-top: 5%;
+
+}
+
+.blog-content {
+
+    width:100%;
+    height:auto;
+    margin-top: 5%;
+
+}
+
+
 
 
 

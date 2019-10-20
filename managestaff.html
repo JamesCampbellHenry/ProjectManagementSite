@@ -45,6 +45,9 @@ CSS elements can be changed/overwritten by making own css file -->
                                          <li class="nav-item">
                                            <a class="nav-link" href="events.html">Events</span></a>
                                          </li>
+                                         <li class="nav-item">
+                                          <a class="nav-link" href="blog.html">Blog</span></a>
+                                        </li>
              
                                          <!--Drop down items start here-->
                                          <li class="nav-item dropdown">
@@ -66,12 +69,124 @@ CSS elements can be changed/overwritten by making own css file -->
                                      </div>
                                    </nav>
              
-
         </div>
-     
-       
         
     </div>
+
+    <!--Content starts here, Always put your grid layouts inside its own class, this has a width of 100% and margin-top from the nav bar
+  sectioned into columns for more custom options,-->
+    <div class = "manageStaffSectionCustom">
+
+        <div class="container-fluid">
+	
+            <div class = "row">
+
+              <div class ="col-sm">
+
+                  <form class="staffInput" action="#"  id="customFormSize">
+            
+                      <div class="form-row">
+                      
+                        <div class="form-group col-md-6">
+                        
+                          <label for="fname">First Name</label>
+                          
+                          <input type="text" class="form-control" id="fname" required>
+                          
+                        </div>
+                        
+                        
+                        <div class="form-group col-md-6">
+                        
+                          <label for="lname">Last Name</label>
+                          
+                          <input type="text" class="form-control" id="lname" required>
+                          
+                        </div>
+                        
+                        
+                      </div>
+                      
+                      <div class="form-group">
+                      
+                        <label for="staffEmail">Email</label>
+                        
+                        <input type="email" class="form-control" id="staffEmail" placeholder="you@example.com" required>
+                        
+                      </div>
+                      
+                      <div class="form-group">
+                      
+                        <label for="staffPassword">Password</label>
+                        
+                        <input type="password" class="form-control" id="staffPassword" required>
+                        
+                      </div>
+                      
+                      <div class="form-group">
+                      
+                        <label for="staffBio">Biography</label>
+                        
+                        <textarea class="form-control" id="staffBio" rows="2" placeholder="Experience / Skills"></textarea>
+                        
+                      </div>
+                      
+                      <!-- button is styled in css to match the RGU purple theme -->
+                      <button type="submit" class="btn btn-primary" id="staffInputBtn">Add Staff</button>
+                      
+                    </form>
+
+
+              </div>
+              
+              <!--Column for the listed staff, these span class number will be how many events that staff member is part off
+              Make these into clickable A classes which display models-->
+              <div class = "col-sm">
+
+                  <div class="list-group">
+                      <!-- data-toggle="modal" AND data-target=".bd-example-modal-lg are used in the A class to toggle the modal-->
+                        <a href="#" class="list-group-item list-group-item-action" data-toggle="modal" data-target=".bd-example-modal-lg">
+                          <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">List group item heading</h5>
+                            
+                          </div>
+                          <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                          <span class="badge badge-primary badge-pill">14</span>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                          <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">List group item heading</h5>
+                            
+                          </div>
+                          <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                          <span class="badge badge-primary badge-pill">9</span>
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                          <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">List group item heading</h5>
+                            
+                          </div>
+                          <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                          <span class="badge badge-primary badge-pill">5</span>
+                        </a>
+                      </div>
+
+              </div>
+            </div>
+          
+          </div>
+
+
+    </div>
+
+    <!-- Modal for editing the staff, implemenent input form here for editing staff and basic layour for their information-->
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            put form content for editing staff in here
+          </div>
+        </div>
+      </div>
 
 
 
