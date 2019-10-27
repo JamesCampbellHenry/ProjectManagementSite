@@ -45,6 +45,9 @@ CSS elements can be changed/overwritten by making own css file -->
                                          <li class="nav-item">
                                            <a class="nav-link" href="events.html">Events</span></a>
                                          </li>
+                                         <li class="nav-item">
+                                          <a class="nav-link" href="blog.html">Blog</span></a>
+                                        </li>
              
                                          <!--Drop down items start here-->
                                          <li class="nav-item dropdown">
@@ -72,6 +75,151 @@ CSS elements can be changed/overwritten by making own css file -->
        
         
     </div>
+
+   <!--Always put your grid layouts inside its own class, this has a width of 100% and margin-top from the nav bar
+  sectioned into columns for more custom options, list containing current events where they can be clicked and edited by staff
+  I'd like like to have the page's layout designed better later on-->
+   <div class = "events-content">
+
+      <div class = "container-fluid"> 
+
+          <div class = "row">
+    
+              <div class = "col-sm">
+    
+                  <form class="col-sm-4 offset-sm-4 text-center">
+                      <div class="">
+                      <label for="exampleFormControlInput1">Contact Email</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@rgu.ac.uk">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlSelect1">Select Building</label>
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Sir Ian Wood Building</option>
+                        <option>Ishbel Gordon Building</option>
+                        <option>Aberdeen Business School</option>
+                        <option>Gray's School of Art</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">Enter Room</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="N100">
+                    </div>
+                        <select class="form-control" id="exampleFormControlSelect2">
+                        <option>StaffExample@rgu.ac.uk</option>
+                        <option>StaffExample2@rgu.ac.uk</option>
+                        <option>StaffExample3@rgu.ac.uk</option>
+                        <option>StaffExample4@rgu.ac.uk</option>
+                      </select>
+                       <br />
+                      <button type="submit" class="btn btn-primary" id="staffInputBtn">Add Another Staff Member</button>
+                         <br />
+                         <br />
+                    <div class="form-group">
+                      <label for="exampleFormControlTextarea1">Description of event</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      <br />
+                      <button type="submit" class="btn btn-primary" id="staffInputBtn">Save Event</button>
+                    </div>
+                  </form>
+    
+    
+              </div>
+
+
+              <!--columsn for the list group of events starts here-->
+              <div class = "col-sm">
+
+                  <div class="list-group">
+                    <!-- data-toggle="modal" AND data-target=".bd-example-modal-lg are used in the A class to toggle the modal-->
+                      <a href="#" class="list-group-item list-group-item-action" data-toggle="modal" data-target=".bd-example-modal-lg">
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="mb-1">List group item heading</h5>
+                          <small>3 days ago</small>
+                        </div>
+                        <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                        <small>Donec id elit non mi porta.</small>
+                      </a>
+                      <a href="#" class="list-group-item list-group-item-action" data-toggle="modal" data-target=".bd-example-modal-lg">
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="mb-1">List group item heading</h5>
+                          <small class="text-muted">3 days ago</small>
+                        </div>
+                        <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                        <small class="text-muted">Donec id elit non mi porta.</small>
+                      </a>
+                      <a href="#" class="list-group-item list-group-item-action" data-toggle="modal" data-target=".bd-example-modal-lg">
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="mb-1">List group item heading</h5>
+                          <small class="text-muted">3 days ago</small>
+                        </div>
+                        <p class="mb-1">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
+                        <small class="text-muted">Donec id elit non mi porta.</small>
+                      </a>
+                    </div>
+
+
+              </div>
+    
+          </div>
+
+          <!-- Modal for editing current events, implemenent input form here for editing events-->
+          <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="d-flex w-100 justify-content-between"?#>
+                  <h5 class="mb-1">List Group Item Heading</h5>
+                    <small>3 days ago</small>
+                  </div>
+                      <form class="col-sm-4 offset-sm-4 text-center">
+                      <div class="">
+                      <label for="exampleFormControlInput1">Contact Email</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@rgu.ac.uk">
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlSelect1">Select Building</label>
+                      <select class="form-control" id="exampleFormControlSelect1">
+                        <option>Sir Ian Wood Building</option>
+                        <option>Ishbel Gordon Building</option>
+                        <option>Aberdeen Business School</option>
+                        <option>Gray's School of Art</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">Enter Room</label>
+                      <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="N100">
+                    </div>
+                    <label for="exampleFormControlInput1">Assigned Staff:</label>
+                    <label for="exampleFormControlInput1">StaffExample4@rgu.ac.uk</label>
+                        <select class="form-control" id="exampleFormControlSelect2">
+                        <option>StaffExample@rgu.ac.uk</option>
+                        <option>StaffExample2@rgu.ac.uk</option>
+                        <option>StaffExample3@rgu.ac.uk</option>
+                        <option>StaffExample4@rgu.ac.uk</option>
+                      </select>
+                       <br />
+                      <button type="submit" class="btn btn-primary" id="staffInputBtn">Add Another Staff Member</button>
+                         <br />
+                         <br />
+                    <div class="form-group">
+                      <label for="exampleFormControlTextarea1">Description of event</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      <br />
+                      <button type="submit" class="btn btn-primary" id="staffInputBtn">Save Changes</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+    
+        </div>
+
+
+   </div>
+
+
+
+  
 
 
 
