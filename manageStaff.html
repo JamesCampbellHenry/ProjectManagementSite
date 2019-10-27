@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset = "UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE-edge">
+<meta name="viewport" content="width = device-width, initial-scale = 1">
+
+<title> RGU Events | Manage Staff </title>
+
+<!-- Importing bootstrap stylesheets from cdns
+CSS elements can be changed/overwritten by making own css file -->
+<link rel="stylesheet" href="customCSS.css">
+<link rel="stylesheet" href="css/bootstrap.css" >
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" ></script>
+
+</head>
+
+<body>
+    <!--container fluid uses 100% width of screen-->
+    <div class="container-fluid">
+
+        <div class="row">
+
+                        <!-- Left side image and text nav bar, img will be changed to our own rgu logo-->
+                         <nav class="navbar fixed-top navbar-light bg-light">
+                             <a class="navbar-brand" href="index.html">
+                                 <img src="img/rgu.jpg" width="30" height="30" class="d-inline-block align-top" alt="">
+                                 RGU Events 
+                             </a>
+                             <!--Nav links, includes drop down (could used for events and staff creation) -->
+                             <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                                     
+                                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                       <span class="navbar-toggler-icon"></span>
+                                     </button>
+                                   
+                                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                       <ul class="navbar-nav mr-auto">
+                                         <li class="nav-item">
+                                           <a class="nav-link" href="index.html">Home </a>
+                                         </li>
+                                         <li class="nav-item">
+                                           <a class="nav-link" href="events.html">Events</span></a>
+                                         </li>
+                                         <li class="nav-item">
+                                          <a class="nav-link" href="blog.html">Blog</span></a>
+                                        </li>
+             
+                                         <!--Drop down items start here-->
+                                         <li class="nav-item dropdown">
+                                           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                             Management
+                                           </a>
+                                           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                             <a class="dropdown-item" href="manageevents.html">Manage Events</a>
+                                             <a class="dropdown-item active" href="managestaff.html">Manage Staff <span class="sr-only">(current)</span></a>
+                                             <div class="dropdown-divider"></div>
+                                             <a class="dropdown-item" href="#">Something else here</a>
+                                           </div>
+                                         </li>
+                                         <li class="nav-item">
+                                                 <a class="nav-link" href="login.html">Sign Out</a>
+                                               </li>
+                                       </ul>
+                                       
+                                     </div>
+                                   </nav>
+             
+        </div>
+        
+    </div>
+
+    <!--Content starts here, Always put your grid layouts inside its own class, this has a width of 100% and margin-top from the nav bar
+  sectioned into columns for more custom options,-->
+    <div class = "manageStaffSectionCustom">
+
+        <div class="container-fluid">
+	
+            <div class = "row">
+
+              <div class ="col-sm">
+
+                  <form class="staffInput" action="#"  id="customFormSize">
+            
+                      <div class="form-row">
+                      
+                        <div class="form-group col-md-6">
+                        
+                          <label for="fname">First Name</label>
+                          
+                          <input type="text" class="form-control" id="fname" required>
+                          
+                        </div>
+                        
+                        
+                        <div class="form-group col-md-6">
+                        
+                          <label for="lname">Last Name</label>
+                          
+                          <input type="text" class="form-control" id="lname" required>
+                          
+                        </div>
+                        
+                        
+                      </div>
+                      
+                      <div class="form-group">
+                      
+                        <label for="staffEmail">Email</label>
+                        
+                        <input type="email" class="form-control" id="staffEmail" placeholder="you@example.com" required>
+                        
+                      </div>
+                      
+                      <div class="form-group">
+                      
+                        <label for="staffPassword">Password</label>
+                        
+                        <input type="password" class="form-control" id="staffPassword" required>
+                        
+                      </div>
+                      
+                      <div class="form-group">
+                      
+                        <label for="staffBio">Biography</label>
+                        
+                        <textarea class="form-control" id="staffBio" rows="2" placeholder="Experience / Skills"></textarea>
+                        
+                      </div>
+                      
+                      <!-- button is styled in css to match the RGU purple theme -->
+                      <button type="submit" class="btn btn-primary" id="staffInputBtn">Add Staff</button>
+                      
+                    </form>
+
+
+              </div>
+              
+              <!--Column for the listed staff, these span class number will be how many events that staff member is part off
+              Make these into clickable A classes which display models-->
+              <div class = "col-sm">
+
+                  <div class="list-group">
+                      <!-- data-toggle="modal" AND data-target=".bd-example-modal-lg are used in the A class to toggle the modal-->
+                        <a href="#" class="list-group-item list-group-item-action" data-toggle="modal" data-target=".bd-example-modal-lg">
+                          <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">Mark Dargie</h5>
+                            
+                          </div>
+                          <p class="mb-1">Skilled front end developer with experience in Bootstrap along with HTML/CSS and Javascript.<br /> Developed website for Dr. Noodles.</p>
+						  <br />
+						  <b><p class="mb-1">Email: m.dargie2@rgu.ac.uk</p></b>
+                          <span class="badge badge-primary badge-pill">14</span>
+                        </a>
+                        
+			
+						<a href="#" class="list-group-item list-group-item-action" data-toggle="modal" data-target=".bd-example-modal-lg">
+                          <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">Cameron Urquhart</h5>
+                            
+                          </div>
+                          <p class="mb-1">Backend developer specialising in PHP, along with general front end design. <br /> Founder of Starvestoppers, a charity website to help those in need.</p>
+						  <br />
+						  <b><p class="mb-1">Email: c.urquhart5@rgu.ac.uk</p></b>
+                          <span class="badge badge-primary badge-pill">9</span>
+                        </a>
+						
+                        <a href="#" class="list-group-item list-group-item-action" data-toggle="modal" data-target=".bd-example-modal-lg">
+                          <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-1">James Henry</h5>
+                            
+                          </div>
+                          <p class="mb-1">Experience in animation, pixel art and game development.</p>
+						  <br />
+						  <b><p class="mb-1">Email: j.henry1@rgu.ac.uk</p></b>
+                          <span class="badge badge-primary badge-pill">5</span>
+                        </a>
+                      </div>
+
+              </div>
+            </div>
+          
+          </div>
+
+
+    </div>
+
+    <!-- Modal for editing the staff, implemenent input form here for editing staff and basic layour for their information-->
+    <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+			<div class="modal-content">
+			
+				<div class="modal-header">
+						<h5 class="col-12 modal-title text-center">Edit Staff Details</h5>
+				</div>
+				
+				<div class="modal-body">
+				
+					<form class="staffInput" action="#">
+						
+						
+				
+						<div class="form-row">
+							
+						  
+							<div class="form-group col-md-6">
+							
+								
+							
+								<label for="fname">First Name</label>
+							  
+								<input type="text" class="form-control" id="fname" required>
+							  
+							</div>
+							
+							
+							<div class="form-group col-md-6">
+							
+								<label for="lname">Last Name</label>
+							  
+								<input type="text" class="form-control" id="lname" required>
+							  
+							</div>
+							
+							
+						 </div>
+						  
+						<div class="form-group">
+						  
+							<label for="staffEmail">Email</label>
+							
+							<input type="email" class="form-control" id="staffEmail" placeholder="you@example.com" required>
+							
+						</div>
+						  
+						<div class="form-group">
+						  
+							<label for="staffPassword">Password</label>
+							
+							<input type="password" class="form-control" id="staffPassword" required>
+							
+						</div>
+						  
+						<div class="form-group">
+						  
+							<label for="staffBio">Biography</label>
+							
+							<textarea class="form-control" id="staffBio" rows="2" placeholder="Experience / Skills"></textarea>
+							
+						</div>
+						  
+						<!-- button is styled in css to match the RGU purple theme
+							 This will be used for submitting the updated staff info-->
+						<button type="submit" class="btn btn-primary" id="staffInputBtn">Update</button>
+						 
+						<!-- button is styled in css to match the RGU purple theme 
+							 This will be used for deleting the staff member
+							 NEEDS PHP-->
+						<button type="button" class="btn btn-primary float-right" id="staffInputBtn">Delete</button>
+						  
+					</form>
+				
+        
+				</div>
+				
+				<div class="modal-footer">
+					<!-- button that closes the modal-->
+					<button type="button" class="btn btn-secondary" data-dismiss="modal" id="staffInputBtn">Close</button>
+				
+				</div>
+				
+				
+				
+			</div>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

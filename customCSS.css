@@ -15,16 +15,13 @@ don't change too much though, check the bootstrap css design first for reference
 
 }
 
-.eventsHomeCustom{
+/* pushes list group in events page down from fixed navbar*/
+ .list-group{
 
-    width: 100%;
-    height:auto;
-    margin-top: 5%;
-
-
+   margin-top:100px;
+    
+    
 }
-
-
 
 /* pushes the slideshow indicators up*/
 .carousel-indicators{
@@ -39,8 +36,23 @@ don't change too much though, check the bootstrap css design first for reference
 }
 
 
+/* ingore this, was testing background images for homepage, might re-use later*/
+.test1 {
 
+    
+    /* background-image: url("img/homeimg1.jpg") no-repeat 0 0; */
+    /* background-size: cover;  */
+   
 
+}
+
+/*used on staff management page, styling is used for form on page and the form within the modal*/
+.staffInput{
+	
+	margin-left: 15%;
+	margin-right: 15%;
+	
+}
 
 /* overrides btn-primary on staff button to be rgu purple theme */
 #staffInputBtn{
@@ -50,30 +62,23 @@ don't change too much though, check the bootstrap css design first for reference
 }
 
 
-
-.events-content {
-
-    width: 100%;
-    height: auto;
-    margin-top: 5%;
-    
-
+/* used for customizing the form on the staff manaagement page (not used for modal)*/
+#customFormSize{
+	
+	font-size: 18px;
+	margin-top: 100px;
+	
 }
 
+
+/* used for the position all elements within the staff management page (excluding modal)*/
 .manageStaffSectionCustom{
 
     margin-top: 5%;
+	padding-right: 5%;
+	padding-bottom: 10%;
 
 }
-
-.blog-content {
-
-    width:100%;
-    height:auto;
-    margin-top: 5%;
-
-}
-
 
 
 
